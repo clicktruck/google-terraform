@@ -75,4 +75,4 @@ For example
 
 This action is workflow dispatched [with inputs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
-See [google-secrets-manager-secrets-dispatch.yml](https://github.com/clicktruck/google-actions/.github/workflows/google-secrets-manager-secrets-dispatch.yml)
+See [google-secrets-manager-secrets-dispatch.yml](https://github.com/clicktruck/google-actions/actions/workflows/google-secrets-manager-secrets-dispatch.yml)

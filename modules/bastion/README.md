@@ -69,4 +69,4 @@ gcloud compute ssh --zone "{zone}" "bastion-vm"  --project "{project-id}"
 
 This action is workflow dispatched [with inputs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
-See [google-bastion-dispatch.yml](https://github.com/clicktruck/google-actions/.github/workflows/google-bastion-dispatch.yml)
+See [google-bastion-dispatch.yml](https://github.com/clicktruck/google-actions/actions/workflows/google-bastion-dispatch.yml)

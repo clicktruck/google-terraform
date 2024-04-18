@@ -78,7 +78,7 @@ kubectl get svc -A
 
 This action is workflow dispatched [with inputs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
-See [google-autopilot-k8s-cluster-dispatch.yml](https://github.com/clicktruck/google-actions/.github/workflows/google-autopilot-k8s-cluster-dispatch.yml)
+See [google-autopilot-k8s-cluster-dispatch.yml](https://github.com/clicktruck/google-actions/actions/workflows/google-autopilot-k8s-cluster-dispatch.yml)
 
 
 

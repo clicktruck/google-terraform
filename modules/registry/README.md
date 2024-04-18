@@ -76,7 +76,7 @@ Consult this public documentation:
 
 This action is workflow dispatched [with inputs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
-See [google-container-registry-dispatch.yml](https://github.com/clicktruck/google-actions/.github/workflows/google-container-registry-dispatch.yml)
+See [google-container-registry-dispatch.yml](https://github.com/clicktruck/google-actions/actions/workflows/google-container-registry-dispatch.yml)
 
 
 ## Credits

@@ -54,4 +54,4 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 
 This action is workflow dispatched [with inputs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
-See [google-kms-dispatch.yml](https://github.com/clicktruck/google-actions/.github/workflows/google-kms-dispatch.yml)
+See [google-kms-dispatch.yml](https://github.com/clicktruck/google-actions/actions/workflows/google-kms-dispatch.yml)

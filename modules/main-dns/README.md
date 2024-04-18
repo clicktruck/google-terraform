@@ -56,4 +56,4 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 
 This action is workflow dispatched [with inputs](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
-See [google-main-dns-dispatch.yml](https://github.com/clicktruck/google-actions/.github/workflows/google-main-dns-dispatch.yml)
+See [google-main-dns-dispatch.yml](https://github.com/clicktruck/google-actions/actions/workflows/google-main-dns-dispatch.yml)
