@@ -22,7 +22,6 @@ variable "service_account_roles" {
     "roles/pubsub.editor",
     "roles/gkehub.admin",
     "roles/meshconfig.admin",
-    "roles/resourcemanager.projectIamAdmin",
     "roles/iam.serviceAccountAdmin",
     "roles/servicemanagement.admin",
     "roles/serviceusage.serviceUsageAdmin",
