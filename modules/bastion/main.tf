@@ -1,12 +1,6 @@
 data "google_compute_image" "latest_custom_image" {
+  filter      = "${var.os_image}*"
   most_recent = true
-
-  filter = [
-    {
-      name   = "name"
-      values = ["${var.os_image}*"]
-    }
-  ]
 }
 
 
