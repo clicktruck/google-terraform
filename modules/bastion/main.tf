@@ -1,3 +1,15 @@
+data "google_compute_image" "latest_custom_image" {
+  most_recent = true
+
+  filter = [
+    {
+      name   = "name"
+      values = ["${var.os_image}*"]
+    }
+  ]
+}
+
+
 resource "google_compute_instance" "vm" {
   name           = var.vm_name
   machine_type   = var.machine_type
@@ -12,7 +24,7 @@ resource "google_compute_instance" "vm" {
   boot_disk {
     auto_delete = true
     initialize_params {
-      image = var.os_image
+      image = data.google_compute_image.latest_custom_image.self_link
       type  = "pd-ssd"
       size  = "40"
     }
