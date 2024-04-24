@@ -8,5 +8,6 @@ output "internal_ip" {
 }
 
 output "to_ssh_to_bastion" {
-  value = "gcloud compute ssh --zone \"${var.zone}\" \"${var.vm_name}\"  --project \"${var.project}\""
+  sensitive = true
+  value     = "gcloud compute ssh --zone \"${var.zone}\" \"${var.vm_name}\"  --project \"${var.project}\""
 }
