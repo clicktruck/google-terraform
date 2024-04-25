@@ -54,9 +54,35 @@ export GOOGLE_APPLICATION_CREDENTIALS=/path/to/credentials.json
 ### Connect to bastion
 
 ```
-gcloud compute ssh --zone "{zone}" "bastion-vm"  --project "{project-id}"
+gcloud compute ssh --zone "{zone}" "{bastion-vm}"  --project "{project-id}"
 ```
-> Replace `{zone}` and `{project-id}` above respectively with a valid availability zone and google project identifier
+> Replace `{zone}`, `{bastion-bm}`, and `{project-id}` above respectively with a valid availability zone, the name of your bastion VM, and a Google Cloud project identifier
+
+
+### Authenticating w/ a service account
+
+Once you've successfully ssh'd into your bastion, you will need to authenticate with a service account.
+
+This is a two-step process.
+
+* upload the the Google Cloud service account key file from your desktop
+* while ssh'd into your bastion VM, authenticate using the key file (you only need to do this once)
+
+e.g, if a file named `keyfile.json` was located in `$HOME/.google` on your desktop, execute:
+
+```
+gcloud compute scp $HOME/.ssh/keyfile.json bastion-vm:$HOME/.ssh/keyfile.json
+```
+
+Then follow the instructions above to [connect to your bastion VM](#connect-to-bastion).
+
+Finally, execute:
+
+```
+gcloud auth activate-service-account --key-file $HOME/.ssh/keyfile.json
+```
+
+You're now ready to do stuff and things.
 
 ### Teardown the bastion
 
