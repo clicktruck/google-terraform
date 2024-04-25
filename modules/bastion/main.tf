@@ -1,5 +1,5 @@
 data "google_compute_image" "latest_custom_image" {
-  filter      = "${var.os_image}*"
+  filter      = "name eq '^${var.os_image}.*'"
   most_recent = true
 }
 
@@ -20,7 +20,7 @@ resource "google_compute_instance" "vm" {
     initialize_params {
       image = data.google_compute_image.latest_custom_image.self_link
       type  = "pd-ssd"
-      size  = "40"
+      size  = "80"
     }
   }
 
