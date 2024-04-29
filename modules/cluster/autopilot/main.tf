@@ -32,6 +32,8 @@ resource "google_container_cluster" "apcluster" {
   # makes this an Autopilot cluster
   enable_autopilot = true
 
+  delete_protection = false
+
   min_master_version = data.google_container_engine_versions.cluster_versions.latest_master_version
 
   release_channel {

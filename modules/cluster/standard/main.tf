@@ -35,6 +35,8 @@ resource "google_container_cluster" "cluster" {
     channel = var.cluster_release_channel
   }
 
+  delete_protection = false
+
   remove_default_node_pool = true
   initial_node_count       = 1
 
